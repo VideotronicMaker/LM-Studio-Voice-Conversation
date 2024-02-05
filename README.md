@@ -96,17 +96,9 @@ After executing the Python script, the batch script will pause, allowing you to 
 
 You should see the output of the Python script in the Command Prompt window. If there are any issues with the script or its execution, error messages will be displayed in the Command Prompt, helping you identify and address any problems.
 
-Copy and paste this Markdown code into your documentation or README file as needed to provide clear instructions for running the `run_script.bat` file.
-```
-
-Ensure to replace the placeholders like `<code_directory>` with actual values when you prepare your repository documentation. This template is structured to help users understand each step in the process, from opening the Command Prompt to executing the `run_script.bat` file and beyond.
-
-
 ## Development Environment Setup
 
 For detailed instructions on setting up and using Visual Studio Code with this project, please see [VSCode Instructions](VSCodeSetup.md).
-
-
 
 ## Need More Help?
 If you're new to using command line interfaces for tasks like navigating directories, creating folders, or managing Python environments, resources like ChatGPT or Gemini Pro can provide detailed, step-by-step guidance.
