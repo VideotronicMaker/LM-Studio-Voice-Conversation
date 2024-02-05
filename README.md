@@ -51,7 +51,6 @@ python speak.py
 ```
 Below is a clear, step-by-step guide on how to run the `run_script.bat` batch file, including navigating to the appropriate directory, running the script, activating the Conda environment, checking directory changes, running a Python script, and reviewing the output.
 
-```markdown
 # How to Run `run_script.bat`
 
 This guide will walk you through the process of running the `run_script.bat` file from the Command Prompt. Follow these steps to execute your script successfully.
