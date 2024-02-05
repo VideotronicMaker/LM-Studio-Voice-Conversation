@@ -1,6 +1,6 @@
 # LM-Studio-Voice-Conversation
 
-Welcome to the LM Studio Local Server setup guide. This guide will walk you through the process of running a local server with LM Studio, enabling you to use Hugging Face models on your PC without an internet connection and without needing an API key. The repository includes six Python (.py) files. For comprehensive functionality, focus on `lmst_inline.py` and `lmst_ext.py`. You only need to run one of these files to start the local server.
+Welcome to the LM-Studio-Voice-Conversation guide. 
 
 ## Getting Started
 Here's how to get the project up and running on your local machine.
