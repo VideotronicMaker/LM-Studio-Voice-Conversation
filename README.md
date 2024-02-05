@@ -49,7 +49,7 @@ To run the script, execute this command in your terminal:
 ```bash
 python speak.py
 ```
-Below is the formatted Markdown content ready for your GitHub repository. This document provides a clear, step-by-step guide on how to run the `run_script.bat` batch file, including navigating to the appropriate directory, running the script, activating the Conda environment, checking directory changes, running a Python script, and reviewing the output.
+Below is a clear, step-by-step guide on how to run the `run_script.bat` batch file, including navigating to the appropriate directory, running the script, activating the Conda environment, checking directory changes, running a Python script, and reviewing the output.
 
 ```markdown
 # How to Run `run_script.bat`
