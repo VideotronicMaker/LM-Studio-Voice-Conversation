@@ -1,6 +1,6 @@
 # LM-Studio-Voice-Conversation
 
-Welcome to the LM-Studio-Voice-Conversation guide. 
+Welcome to the guide for setting up and running the LM-Studio-Voice-Conversation Python application. This application enhances voice conversations using local Large Language Models (LLMs) and incorporates Whisper for speech-to-text capabilities. It is designed with a focus on privacy and accessibility, providing a user-friendly interface for interactive voice-based interactions with AI. 
 
 ## Getting Started
 Here's how to get the project up and running on your local machine.
