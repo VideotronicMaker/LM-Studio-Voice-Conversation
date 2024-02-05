@@ -1,0 +1,6 @@
+keyboard==0.13.5
+openai==0.27.0
+pyaudio==0.2.11
+pyttsx3==2.90
+tk==0.1.0
+whisper==0.3.0
