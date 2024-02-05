@@ -39,38 +39,60 @@ git clone https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation
 - **LLM Python Script (`speak.py`)**: Main script for the language model.
 
 To run the script, execute this command in your terminal:
-   ```bash
-   python speak.py
-   ```
+```bash
+python speak.py
 
-## How to Run `run_script.bat`
+Below is the formatted Markdown content ready for your GitHub repository. This document provides a clear, step-by-step guide on how to run the `run_script.bat` batch file, including navigating to the appropriate directory, running the script, activating the Conda environment, checking directory changes, running a Python script, and reviewing the output.
 
-1. **Open Command Prompt**: Press `Win + R`, type `cmd`, and press Enter to open the Command Prompt.
+```markdown
+# How to Run `run_script.bat`
 
-2. **Navigate to the Directory**: If you're not already in the directory where the `run_script.bat` file is located, use the `cd` command to navigate to the directory where your code is stored. Replace `<code_directory>` with the actual path to your code directory:
+This guide will walk you through the process of running the `run_script.bat` file from the Command Prompt. Follow these steps to execute your script successfully.
 
-   ```batch
-   cd /d <code_directory>
+## 1. Open Command Prompt
 
-   ```
-   Make sure to replace the path with the actual path to the directory containing the run_script.bat file.
+Press `Win + R`, type `cmd`, and press Enter to open the Command Prompt.
 
-1- Run the Batch Script: Once you are in the correct directory, simply execute the run_script.bat file by typing its name and pressing Enter:
+## 2. Navigate to the Directory
 
-   `run_script.bat`
+If you're not already in the directory where the `run_script.bat` file is located, use the `cd` command to navigate to the directory where your code is stored. Replace `<code_directory>` with the actual path to your code directory:
 
-2- Activate Conda Environment: The batch script will attempt to activate the Conda environment named python.
+```batch
+cd /d <code_directory>
+```
 
-3- Check Directory Change: It will check if the directory change was successful. If it encounters an issue and cannot find the specified path, it will display an error message: "The system cannot find the path specified."
+Make sure to replace `<code_directory>` with the actual path to the directory containing the `run_script.bat` file.
 
-4- Run Python Script: If the directory change is successful, it will proceed to run the Python script named speak.py.
+## 3. Run the Batch Script
 
-5- Completion and Pause: After executing the Python script, the batch script will pause, allowing you to review any output or messages displayed by the Python script.
+Once you are in the correct directory, simply execute the `run_script.bat` file by typing its name and pressing Enter:
+
+```cmd
+run_script.bat
+```
+
+## 4. Activate Conda Environment
+
+The batch script will attempt to activate the Conda environment named `python`.
+
+## 5. Check Directory Change
+
+It will check if the directory change was successful. If it encounters an issue and cannot find the specified path, it will display an error message: "The system cannot find the path specified."
+
+## 6. Run Python Script
+
+If the directory change is successful, it will proceed to run the Python script named `speak.py`.
+
+## 7. Completion and Pause
+
+After executing the Python script, the batch script will pause, allowing you to review any output or messages displayed by the Python script.
 
 You should see the output of the Python script in the Command Prompt window. If there are any issues with the script or its execution, error messages will be displayed in the Command Prompt, helping you identify and address any problems.
 
+Copy and paste this Markdown code into your documentation or README file as needed to provide clear instructions for running the `run_script.bat` file.
+```
 
-You can copy and paste this Markdown code into your documentation or README file as needed.
+Ensure to replace the placeholders like `<code_directory>` with actual values when you prepare your repository documentation. This template is structured to help users understand each step in the process, from opening the Command Prompt to executing the `run_script.bat` file and beyond.
 
 
 ## Development Environment Setup
