@@ -39,10 +39,11 @@ git clone https://github.com/VideotronicMaker/LM-Studio-Voice-Conversation
 - **LLM Python Script (`speak.py`)**: Main script for the language model.
 
 To run the script, execute this command in your terminal:
-```bash
-python speak.py
+   ```bash
+   python speak.py
+   ```
 
-# How to Run `run_script.bat`
+## How to Run `run_script.bat`
 
 1. **Open Command Prompt**: Press `Win + R`, type `cmd`, and press Enter to open the Command Prompt.
 
@@ -51,7 +52,7 @@ python speak.py
    ```batch
    cd /d <code_directory>
 
-```
+   ```
    Make sure to replace the path with the actual path to the directory containing the run_script.bat file.
 
 1- Run the Batch Script: Once you are in the correct directory, simply execute the run_script.bat file by typing its name and pressing Enter:
