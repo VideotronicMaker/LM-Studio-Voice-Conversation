@@ -12,7 +12,7 @@ import pyttsx3
 import tkinter as tk
 from tkinter import simpledialog
 
-# Initialize Text-to-Speech engine with Hazel's voice
+# Initialize Text-to-Speech engine with Hazel's voice.  This applies to Windows users only.  Mac users can comment this block out.
 engine = pyttsx3.init()
 hazel_voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0"
 engine.setProperty('voice', hazel_voice_id)
