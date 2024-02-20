@@ -37,7 +37,7 @@ colors = {
 # Step 4: Ignore FP16 warnings
 warnings.filterwarnings("ignore", message="FP16 is not supported on CPU")
 
-# Step 5: Configure OpenAI settings
+# Step 5: Point to LM Studio Local Inference Server
 openai.api_base = "http://localhost:1234/v1"
 openai.api_key = "not-needed"
 
