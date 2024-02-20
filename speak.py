@@ -1,6 +1,4 @@
-# Stat STT with "B", stop it with , "N". Type by pressing "M".  
-# This will open a GUI just for typing.  You then switch back to the terminal for STT.
-
+# Step 1: Import necessary libraries and modules
 import warnings
 import pyaudio
 import wave
@@ -12,14 +10,14 @@ import pyttsx3
 import tkinter as tk
 from tkinter import simpledialog
 
-# Initialize Text-to-Speech engine with Hazel's voice.  This applies to Windows users only.  Mac users can comment this block out.
+# Step 2: Initialize Text-to-Speech engine (Windows users only)
 engine = pyttsx3.init()
 hazel_voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-GB_HAZEL_11.0"
 engine.setProperty('voice', hazel_voice_id)
 engine.say("Hello Videotronic Maker, How can I assist you today sir?")
 engine.runAndWait()
 
-# Define ANSI escape sequences for text color
+# Step 3: Define ANSI escape sequences for text color
 colors = {
     "blue": "\033[94m",
     "bright_blue": "\033[96m",
@@ -36,24 +34,29 @@ colors = {
     "reset": "\033[0m"
 }
 
+# Step 4: Ignore FP16 warnings
 warnings.filterwarnings("ignore", message="FP16 is not supported on CPU")
 
-
+# Step 5: Configure OpenAI settings
 openai.api_base = "http://localhost:1234/v1"
 openai.api_key = "not-needed"
 
-whisper_model = whisper.load_model("tiny")      # orig=base
+# Step 6: Load the Whisper model
+whisper_model = whisper.load_model("tiny")  # orig=base
 
+# Step 7: Define audio parameters
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
-RATE = 8000     # orig = 16000
+RATE = 8000  # orig = 16000
 CHUNK = 1024
 audio = pyaudio.PyAudio()
 
+# Step 8: Define function to speak text
 def speak(text):
     engine.say(text)
     engine.runAndWait()
 
+# Step 9: Define function to record audio
 def record_audio():
     stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
     print(f"{colors['green']}Start speaking... (Press 'N' to stop){colors['reset']}")
@@ -78,13 +81,14 @@ def record_audio():
 
     return "temp_audio.wav"
 
+# Step 10: Define function to get user input via GUI dialog
 def get_user_input():
-    """Create a GUI dialog for user input."""
     ROOT = tk.Tk()
     ROOT.withdraw()  # Hide the main Tkinter window
     user_input = simpledialog.askstring(title="Text Input", prompt="Type your input:")
     return user_input
 
+# Step 11: Define function to process user input and generate response
 def process_input(input_text):
     conversation = [
         {"role": "system", "content": "You are KITT, the assistant chatbot. My name is VideotronicMaker, the human and user. Your role is to assist the human, who is known as VideotronicMaker. Respond concisely and accurately, maintaining a friendly, respectful, and professional tone. Emphasize honesty, candor, and precision in your responses."},
@@ -103,8 +107,8 @@ def process_input(input_text):
     print(f"{colors['magenta']}KITT:{colors['reset']} {assistant_reply}")
     speak(assistant_reply)
 
+# Step 12: Main loop to continuously monitor for user input
 print(f"{colors['yellow']}Ready to record. (Press 'B' to start, 'M' to type){colors['reset']}")
-
 while True:
     try:
         if keyboard.is_pressed('b'):  # Start recording when 'B' is pressed
@@ -125,5 +129,5 @@ while True:
         print("\nExiting...")
         break  # Correctly placed to exit the loop upon a KeyboardInterrupt
 
-
+# Step 13: Cleanup audio resources
 audio.terminate()
